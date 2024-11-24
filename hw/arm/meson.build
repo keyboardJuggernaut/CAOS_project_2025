@@ -78,4 +78,6 @@ system_ss.add(when: 'CONFIG_VERSATILE', if_true: files('versatilepb.c'))
 system_ss.add(when: 'CONFIG_VEXPRESS', if_true: files('vexpress.c'))
 system_ss.add(when: 'CONFIG_Z2', if_true: files('z2.c'))
 
+system_ss.add(when: 'CONFIG_NXPS32K3', if_true: files('nxpS32K3.c'))
+
 hw_arch += {'arm': arm_ss}
